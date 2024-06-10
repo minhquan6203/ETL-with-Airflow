@@ -20,15 +20,15 @@ docker-compose up airflow-init
 ```bash
 docker-compose up -d
 ```
-3. Check the running containers
+3. Check the containers
 ```bash
 docker ps
 ```
-3. Check the running containers
+3. Running containers
 ```bash
 docker-compose run airflow-worker airflow info
 ```
 
-5. Open browser and type http://0.0.0.0:8080 to launch the airflow webserver
+5. Open browser and type http://localhost:8080 to launch the airflow webserver
 
 ![](images/screenshot_airflow_docker.png)
