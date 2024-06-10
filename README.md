@@ -29,6 +29,6 @@ docker ps
 docker-compose run airflow-worker airflow info
 ```
 
-5. Open browser and type http://localhost:8080 to launch the airflow webserver
+5. Open browser and type http://localhost:8080 to launch the airflow webserver. The default account has the login 'airflow' and the password 'airflow'
 
 ![](images/screenshot_airflow_docker.png)
