@@ -1,0 +1,17 @@
+[2024-06-14T04:30:27.065+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-06-14T04:30:27.155+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ETL_toll_data.unzip_data scheduled__2024-06-11T00:00:00+00:00 [queued]>
+[2024-06-14T04:30:27.176+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ETL_toll_data.unzip_data scheduled__2024-06-11T00:00:00+00:00 [queued]>
+[2024-06-14T04:30:27.178+0000] {taskinstance.py:2306} INFO - Starting attempt 2 of 2
+[2024-06-14T04:30:27.746+0000] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): unzip_data> on 2024-06-11 00:00:00+00:00
+[2024-06-14T04:30:27.782+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'ETL_toll_data', 'unzip_data', 'scheduled__2024-06-11T00:00:00+00:00', '--job-id', '10', '--raw', '--subdir', 'DAGS_FOLDER/ETL_toll_data.py', '--cfg-path', '/tmp/tmpisnvk3wb']
+[2024-06-14T04:30:27.783+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=127) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-06-14T04:30:27.784+0000] {standard_task_runner.py:91} INFO - Job 10: Subtask unzip_data
+[2024-06-14T04:30:27.785+0000] {standard_task_runner.py:63} INFO - Started process 141 to run task
+[2024-06-14T04:30:38.831+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 10 for task unzip_data ((psycopg2.OperationalError) could not translate host name "postgres" to address: Temporary failure in name resolution
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8); 141)
+[2024-06-14T04:30:42.904+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2024-06-14T04:30:42.956+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-06-14T04:30:42.962+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

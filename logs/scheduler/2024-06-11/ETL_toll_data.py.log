@@ -1,0 +1,14 @@
+[2024-06-11T01:19:15.735+0000] {processor.py:161} INFO - Started process (PID=30) to work on /opt/airflow/dags/ETL_toll_data.py
+[2024-06-11T01:19:15.739+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ETL_toll_data.py for tasks to queue
+[2024-06-11T01:19:15.745+0000] {logging_mixin.py:188} INFO - [2024-06-11T01:19:15.745+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ETL_toll_data.py
+[2024-06-11T01:19:17.393+0000] {processor.py:840} INFO - DAG(s) 'ETL_toll_data' retrieved from /opt/airflow/dags/ETL_toll_data.py
+[2024-06-11T01:19:17.963+0000] {logging_mixin.py:188} INFO - [2024-06-11T01:19:17.963+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-11T01:19:18.003+0000] {logging_mixin.py:188} INFO - [2024-06-11T01:19:18.003+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL_toll_data to 2024-06-11 00:00:00+00:00, run_after=2024-06-12 00:00:00+00:00
+[2024-06-11T01:19:18.599+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ETL_toll_data.py took 2.883 seconds
+[2024-06-11T01:19:49.444+0000] {processor.py:161} INFO - Started process (PID=95) to work on /opt/airflow/dags/ETL_toll_data.py
+[2024-06-11T01:19:49.446+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ETL_toll_data.py for tasks to queue
+[2024-06-11T01:19:49.448+0000] {logging_mixin.py:188} INFO - [2024-06-11T01:19:49.448+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ETL_toll_data.py
+[2024-06-11T01:19:49.969+0000] {processor.py:840} INFO - DAG(s) 'ETL_toll_data' retrieved from /opt/airflow/dags/ETL_toll_data.py
+[2024-06-11T01:19:49.987+0000] {logging_mixin.py:188} INFO - [2024-06-11T01:19:49.987+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-11T01:19:50.009+0000] {logging_mixin.py:188} INFO - [2024-06-11T01:19:50.009+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL_toll_data to 2024-06-11 00:00:00+00:00, run_after=2024-06-12 00:00:00+00:00
+[2024-06-11T01:19:50.030+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ETL_toll_data.py took 0.591 seconds

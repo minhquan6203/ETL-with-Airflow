@@ -1,0 +1,26 @@
+[2024-06-10T14:32:02.181+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-06-10T14:32:02.210+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ETL_toll_data.download_data manual__2024-06-10T14:31:58.549495+00:00 [queued]>
+[2024-06-10T14:32:02.220+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ETL_toll_data.download_data manual__2024-06-10T14:31:58.549495+00:00 [queued]>
+[2024-06-10T14:32:02.221+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2024-06-10T14:32:02.235+0000] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): download_data> on 2024-06-10 14:31:58.549495+00:00
+[2024-06-10T14:32:02.242+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=125) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-06-10T14:32:02.244+0000] {standard_task_runner.py:63} INFO - Started process 127 to run task
+[2024-06-10T14:32:02.243+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'ETL_toll_data', 'download_data', 'manual__2024-06-10T14:31:58.549495+00:00', '--job-id', '3', '--raw', '--subdir', 'DAGS_FOLDER/ETL_toll_data.py', '--cfg-path', '/tmp/tmpgsuzmwtw']
+[2024-06-10T14:32:02.245+0000] {standard_task_runner.py:91} INFO - Job 3: Subtask download_data
+[2024-06-10T14:32:02.291+0000] {task_command.py:426} INFO - Running <TaskInstance: ETL_toll_data.download_data manual__2024-06-10T14:31:58.549495+00:00 [running]> on host ec95ec94af47
+[2024-06-10T14:32:02.370+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='21521333@gm.uit.edu.vn' AIRFLOW_CTX_DAG_OWNER='quan' AIRFLOW_CTX_DAG_ID='ETL_toll_data' AIRFLOW_CTX_TASK_ID='download_data' AIRFLOW_CTX_EXECUTION_DATE='2024-06-10T14:31:58.549495+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-06-10T14:31:58.549495+00:00'
+[2024-06-10T14:32:02.371+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-06-10T14:32:02.372+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-06-10T14:32:02.373+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'curl -o /tmp/tolldata.tgz https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-DB0250EN-SkillsNetwork/labs/Final%20Assignment/tolldata.tgz']
+[2024-06-10T14:32:02.386+0000] {subprocess.py:86} INFO - Output:
+[2024-06-10T14:32:02.396+0000] {subprocess.py:93} INFO -   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+[2024-06-10T14:32:02.397+0000] {subprocess.py:93} INFO -                                  Dload  Upload   Total   Spent    Left  Speed
+[2024-06-10T14:32:14.834+0000] {subprocess.py:93} INFO -   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0 12  516k   12 65536    0     0  16248      0  0:00:32  0:00:04  0:00:28 16249 21  516k   21  112k    0     0  23909      0  0:00:22  0:00:04  0:00:18 23908 34  516k   34  176k    0     0  29993      0  0:00:17  0:00:06  0:00:11 34315 46  516k   46  240k    0     0  32082      0  0:00:16  0:00:07  0:00:09 42168 49  516k   49  256k    0     0  33697      0  0:00:15  0:00:07  0:00:08 56411 71  516k   71  368k    0     0  42744      0  0:00:12  0:00:08  0:00:04 65083 77  516k   77  400k    0     0  39155      0  0:00:13  0:00:10  0:00:03 52067 86  516k   86  447k    0     0  41688      0  0:00:12  0:00:10  0:00:02 55791 92  516k   92  480k    0     0  41693      0  0:00:12  0:00:11  0:00:01 59520100  516k  100  516k    0     0  42530      0  0:00:12  0:00:12 --:--:-- 57288
+[2024-06-10T14:32:14.836+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-06-10T14:32:14.837+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-06-10T14:32:14.861+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=ETL_toll_data, task_id=download_data, run_id=manual__2024-06-10T14:31:58.549495+00:00, execution_date=20240610T143158, start_date=20240610T143202, end_date=20240610T143214
+[2024-06-10T14:32:14.880+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-06-10T14:32:14.907+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-06-10T14:32:14.909+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
